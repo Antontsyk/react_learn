@@ -58,14 +58,12 @@ const data = [
     }
 ];
 
-
-
 render(
      <Router history={browserHistory}>     
         <Main>
             <Switch>
                 <Route exact path="/" component={Home} />                
-                <Route path="/cars/:id" render={() => <CarDetail list={data} />}/>
+                <Route path="/cars/:id" component={CarDetail} />
                 <Route path="/cars" render={() => <Car list={data} />}/>                     
                 <Route path="/about" component={About} />
             </Switch>
