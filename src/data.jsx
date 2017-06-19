@@ -1,4 +1,4 @@
-export const DataAll = [
+const DataAll = [
             {
                 id: 1,
                 name: 'Honda Accord Crosstour',
@@ -47,3 +47,5 @@ export const DataAll = [
                 price: '$123,890'
             }
         ];
+
+export default DataAll;
