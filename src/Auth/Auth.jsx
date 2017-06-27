@@ -1,6 +1,7 @@
+/*
 import auth0 from 'auth0-js';
 
-export default class Auth {
+class Auth extends Component {
     auth0 = new auth0.WebAuth({
         domain: 'loginlearn.eu.auth0.com',
         clientID: 'DazIvDwukbXHPEEj9ZtwyoQanPaXybpi',
@@ -16,4 +17,7 @@ export default class Auth {
 
 }
 
+export default Auth;
+
 //https://manage.auth0.com/#/clients/DazIvDwukbXHPEEj9ZtwyoQanPaXybpi/quickstart
+*/

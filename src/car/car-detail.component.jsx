@@ -13,6 +13,21 @@ import DataAll from '../data.jsx';
 );*/
 
 class CarDetail extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            loading: true
+        }
+    }
+    componentWillMount(){
+        console.log(this.state.loading);
+    }
+    componentDidMount(){
+        this.setState({
+            loading: false
+        });
+        console.log(this.state.loading);
+    }
     getProjectId() {
         console.log(DataAll);
         let projectID = DataAll.filter(el => {
