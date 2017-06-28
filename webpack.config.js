@@ -13,9 +13,10 @@ var config = {
     ],
     output: {
         path: BUILD_DIR,
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: "/public/",
     },
-    devtool: 'inline-source-map',
+    devtool: 'cheap-module-eval-source-map',
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
@@ -41,6 +42,7 @@ var config = {
         hot: true,
         // enable HMR on the server
     },
+    watch: true
 };
 
 module.exports = config;
